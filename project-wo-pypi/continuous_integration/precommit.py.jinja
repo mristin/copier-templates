@@ -108,6 +108,7 @@ def main() -> int:
             "{{ module_name }}",
             "continuous_integration",
             "tests",
+            "dev_scripts",
         ]
 
         if overwrite:
@@ -135,6 +136,7 @@ def main() -> int:
             "{{ module_name }}",
             "tests",
             "continuous_integration",
+            "dev_scripts",
         ]
 
         exit_code = call_and_report(
@@ -159,6 +161,7 @@ def main() -> int:
             "{{ module_name }}",
             "tests",
             "continuous_integration",
+            "dev_scripts",
         ]
 
         exit_code = call_and_report(
