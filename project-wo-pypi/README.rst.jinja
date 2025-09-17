@@ -1,0 +1,51 @@
+{{ '*' * project_name|length }}
+{{ project_name }}
+{{ '*' * project_name|length }}
+
+.. image:: {{ repo_url }}/actions/workflows/ci.yml/badge.svg
+    :target: {{ repo_url }}/actions/workflows/ci.yml
+    :alt: Continuous integration
+
+{{ motto }}
+
+Installation
+============
+Check out the repository and change to its directory.
+
+Create a virtual environment:
+
+.. code-block::
+
+    python -m venv venv
+
+Activate it (on Windows):
+
+.. code-block::
+
+    venv/Scripts/activate
+
+... or on Unix:
+
+.. code-block::
+
+    source venv/bin/activate
+
+Install the dependencies:
+
+.. code-block::
+
+    pip3 install .
+
+You can now run ``{{ project_name }}`` (see ``--help`` section below).
+
+``--help``
+==========
+
+.. Help starts: {{ project_name }} --help
+.. code-block::
+
+.. Help ends: {{ project_name }} --help
+
+Contributing
+============
+See [CONTRIBUTING.rst](CONTRIBUTING.rst).
