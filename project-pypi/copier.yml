@@ -1,0 +1,24 @@
+# questions
+project_name:
+    type: str
+    help: What is your project name?
+
+module_name:
+    type: str
+    help: What is your Python module name?
+
+motto:
+    type: str
+    help: What is the motto of your project?
+
+owner_project_path:
+    type: str
+    help: Path beneath github, e.g., `mristin/some-repo`
+
+author_name:
+    type: str
+    help: Name of the main author of the project?
+
+author_email:
+    type: str
+    help: Email address of the main author?

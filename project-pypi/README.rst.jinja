@@ -2,9 +2,19 @@
 {{ project_name }}
 {{ '*' * project_name|length }}
 
-.. image:: {{ repo_url }}/actions/workflows/ci.yml/badge.svg
-    :target: {{ repo_url }}/actions/workflows/ci.yml
+.. image:: https://github.com/{{ owner_project_path }}/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/{{ owner_project_path }}/actions/workflows/ci.yml
     :alt: Continuous integration
+
+.. image:: https://coveralls.io/repos/github/{{ owner_project_path }}/badge.svg?branch=main
+    :target: https://coveralls.io/github/{{ owner_project_path }}
+
+.. image:: https://badge.fury.io/py/{{ project_name }}.svg
+    :target: https://badge.fury.io/py/{{ project_name }}
+    :alt: PyPI - version
+
+.. image:: https://img.shields.io/pypi/pyversions/{{ project_name }}.svg
+    :alt: PyPI - Python Version
 
 {{ motto }}
 
@@ -34,7 +44,7 @@ Install the dependencies:
 
 .. code-block::
 
-    pip3 install {{ project_name }}
+    pip3 install .
 
 You can now run ``{{ project_name }}`` (see ``--help`` section below).
 
@@ -43,7 +53,6 @@ You can now run ``{{ project_name }}`` (see ``--help`` section below).
 
 .. Help starts: {{ project_name }} --help
 .. code-block::
-
 .. Help ends: {{ project_name }} --help
 
 Contributing
