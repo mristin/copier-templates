@@ -46,6 +46,9 @@ repository = "{{ repo_url }}"
 include = ["{{ module_name }}"]
 exclude = ["continuous_integration", "tests"]
 
+[tool.setuptools.package-data]
+{{ module_name }} = ["py.typed"]
+
 # Development tooling
 [tool]
 [tool.black]
